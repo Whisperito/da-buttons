@@ -31,7 +31,7 @@ class MainWindow(QMainWindow):
 
         self.box = QComboBox(self)
         self.box.setGeometry(120, 30, 100, 25)
-        self.box.addItems(["English", "Français", "Español", "Português"])
+        self.box.addItems(["English", "Français", "Español", "Português", "Russian"])
 
     def change_language(self):
         if self.box.currentIndex() == 1:
@@ -50,6 +50,10 @@ class MainWindow(QMainWindow):
             self.setWindowTitle("BOTÕES - Versão Python😎😎😎")
             self.button_plus.setText("Botão +")
             self.button_minus.setText("Botão -")
+        elif self.box.currentIndex() == 5:
+            self.setWindowTitle("КНОПКИ - версия Python 😎😎😎")
+            self.button_plus.setText("+ кнопка")
+            self.button_minus.setText("- + кнопка")    
 
 
     def increment(self):
