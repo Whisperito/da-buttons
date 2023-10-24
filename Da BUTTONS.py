@@ -50,10 +50,10 @@ class MainWindow(QMainWindow):
             self.setWindowTitle("BOTÕES - Versão Python😎😎😎")
             self.button_plus.setText("Botão +")
             self.button_minus.setText("Botão -")
-        elif self.box.currentIndex() == 5:
+        elif self.box.currentIndex() == 4:
             self.setWindowTitle("КНОПКИ - версия Python 😎😎😎")
             self.button_plus.setText("+ кнопка")
-            self.button_minus.setText("- + кнопка")    
+            self.button_minus.setText("- кнопка")
 
 
     def increment(self):
